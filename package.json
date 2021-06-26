@@ -1,0 +1,23 @@
+{
+  "name": "nuxt-apollo-auth-example-javascript",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@nuxtjs/apollo": "^4.0.1-rc.5",
+    "apollo-server": "^2.25.2",
+    "core-js": "^3.9.1",
+    "graphql-tag": "^2.12.5",
+    "jsonwebtoken": "^8.5.1",
+    "nuxt": "^2.15.3",
+    "nuxt-apollo-auth": "0.0.171-dev"
+  },
+  "devDependencies": {
+    "@nuxtjs/vuetify": "^1.11.3"
+  }
+}
