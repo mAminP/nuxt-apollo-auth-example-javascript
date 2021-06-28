@@ -6,6 +6,8 @@
       <v-toolbar-title v-text="title" />
       <v-spacer/>
       <v-btn rounded class="mx-2" color="grey" :to="{name: 'index'}">Home</v-btn>
+      <v-btn rounded class="mx-2" color="grey" :to="{name: 'protected'}">Protected</v-btn>
+      <v-btn rounded class="mx-2" color="grey" :to="{name: 'allowed'}">Allowed</v-btn>
       <v-btn rounded class="mx-2" color="grey " v-if="!$qAuth.loggedIn" :to="{name: 'login'}">Login</v-btn>
       <v-btn rounded class="mx-2" color="grey "  v-else @click.stop="logout">Logout</v-btn>
       <v-spacer />

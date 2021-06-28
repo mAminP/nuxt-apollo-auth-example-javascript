@@ -50,19 +50,22 @@ export default {
   },
   qAuth: {
     // Options
-    strategies:{
-      local:{
-          endpoints:{
-              login:{
-                  mutation: gql`mutation login($data:LoginInput!) { login(data: $data){ token } } `
-              },
-              user:{
-                  query:gql`query me { me{ user{ id name roles } } }`
-              }
+    strategies: {
+      local: {
+        endpoints: {
+          login: {
+            mutation: gql`mutation login($data:LoginInput!) { login(data: $data){ token } } `
+          },
+          user: {
+            query: gql`query me { me{ user{ id name roles } } }`
           }
+        }
       }
-  }
+    }
   },
+  //router: {
+    //     middleware: ['qAuth']
+  // },
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
   vuetify: {
     customVariables: ['~/assets/variables.scss'],
